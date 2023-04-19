@@ -4,9 +4,8 @@ const fs = require('fs')
 const express = require('express')
 const bodyParser = require('body-parser')
 const fileupload = require('express-fileupload')
-const https = require('https')
 const app = express()
-app.set('filesFolder', '/var/www/wildcards/EfectHover.aptugo.app/img/')
+app.set('filesFolder', __dirname + '/../dist/img')
 app.use(function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*')
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, XMLHttpRequest, authorization, *')
@@ -60,7 +59,7 @@ mongoose
 
 require('./app/routes/apiRoutes.js')(app)
 
-app.use('/images', express.static('/var/www/wildcards/EfectHover.aptugo.app/img/'))
+app.use('/images', express.static(__dirname + '/../dist/img'))
 
 let tries = 0
 

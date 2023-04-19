@@ -92,7 +92,7 @@ body{
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676417557/AlPacino_tdht8k.jpg");
+  background: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676417557/AlPacino_tdht8k.jpg");
   background-position: center center no-repeat;
 
   background-size: 300px;
@@ -101,8 +101,9 @@ body{
 
 .cardCero:hover {
   background: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676417557/AlPacino_tdht8k.jpg") left center no-repeat;
-  // background-position: ;
+  // background-position: left center no-repeat;
   background-size: 600px;
+  
 }
 
 .cardCero:hover h2 {
@@ -128,7 +129,7 @@ body{
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676420867/BenStiller_s9yo6e.jpg");
+  background: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676420867/BenStiller_s9yo6e.jpg");
   background-position:  center center no-repeat;
 
   background-size: 300px;
@@ -164,7 +165,7 @@ body{
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676421755/Patrick_Stewart_to35ar.jpg");
+  background: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676421755/Patrick_Stewart_to35ar.jpg");
   background-position: center center no-repeat;
 
   background-size: 300px;

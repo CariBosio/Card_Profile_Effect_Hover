@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 const fileupload = require('express-fileupload')
 
 const app = express()
-app.set('filesFolder', '/var/www/wildcards/EfectHover.aptugo.app/img/')
+app.set('filesFolder', __dirname + '/../dist/img')
 
 app.use(function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*')
@@ -38,6 +38,6 @@ mongoose
     // process.exit();
   })
 
-app.use('/images', express.static('/var/www/wildcards/EfectHover.aptugo.app/img/'))
+app.use('/images', express.static(__dirname + '/../dist/img'))
 
 module.exports = app

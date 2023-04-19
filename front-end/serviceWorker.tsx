@@ -13,9 +13,9 @@ type Config = {
 
 export function register(config?: Config) {
   if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
-    const publicUrl = new URL('https://efecthoverlite.aptugo.app')
+    const publicUrl = new URL('https://efecthoverlite.aptugo.com')
     window.addEventListener('load', () => {
-      const swUrl = `https://efecthoverlite.aptugo.app/service-worker.js`
+      const swUrl = `https://efecthoverlite.aptugo.com/service-worker.js`
       if (isLocalhost) {
         checkValidServiceWorker(swUrl, config)
         navigator.serviceWorker.ready.then(() => {
