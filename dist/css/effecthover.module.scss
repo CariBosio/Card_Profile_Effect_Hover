@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
 
-body{
+body {
   margin: 0 !important;
   padding: 0 !important;
   box-sizing: border-box !important;
@@ -15,6 +16,8 @@ body{
   padding-top: 4rem;
 }
 
+//------TITULO------
+
 .title {
   width: 100%;
   display: flex;
@@ -25,7 +28,6 @@ body{
   letter-spacing: 5px;
   text-transform: uppercase;
   animation: animate 3s linear;
-  ;
   -webkit-animation: animate 3s linear;
   line-height: 1;
 }
@@ -47,7 +49,7 @@ body{
     -ms-transform: scale(2);
     -o-transform: scale(2);
     opacity: .5;
-}
+  }
 
   90% {
     transform: scale(1.1);
@@ -56,15 +58,18 @@ body{
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
     opacity: 1;
-}
-  100%{
+  }
+
+  100% {
     transform: scale(0.5);
     -webkit-transform: scale(0.5);
     -moz-transform: scale(0.5);
     -ms-transform: scale(0.5);
     -o-transform: scale(0.5);
+  }
 }
-}
+
+// ------ CARDS------
 
 .cards {
   width: 100%;
@@ -73,85 +78,11 @@ body{
   justify-content: center;
   padding: 4.5rem 0;
   align-items: center;
-
-  // margin-top: 8rem;
 }
 
-// CARD CERO ===================================================
-
-.cardCero {
-  height: 379px;
-  width: 300px;
-  background: #808080;
-  border-radius: 10px;
-  transition: background 0.8s;
-  overflow: hidden;
-  background: #000;
-  box-shadow: 0 70px 63px -60px #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676417557/AlPacino_tdht8k.jpg");
-  background-position: center center no-repeat;
-
-  background-size: 300px;
-  margin: 30px;
-}
-
-.cardCero:hover {
-  background: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676417557/AlPacino_tdht8k.jpg") left center no-repeat;
-  // background-position: left center no-repeat;
-  background-size: 600px;
-  
-}
-
-.cardCero:hover h2 {
-  opacity: 1;
-}
-
-.cardCero:hover .fa {
-  opacity: 1;
-}
-
-// CARD UNO==============================================================
-
-.cardUno {
-  height: 379px;
-  width: 300px;
-  background: #808080;
-  border-radius: 10px;
-  transition: background 0.8s;
-  overflow: hidden;
-  background: #000;
-  box-shadow: 0 70px 63px -60px #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676420867/BenStiller_s9yo6e.jpg");
-  background-position:  center center no-repeat;
-
-  background-size: 300px;
-  margin: 30px;
-}
-
-.cardUno:hover {
-  background: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676420867/BenStiller_s9yo6e.jpg") left center no-repeat;
-  // background-position: center no-repeat;
-  background-size: 600px;
-}
-
-.cardUno:hover h2 {
-  opacity: 1;
-}
-
-.cardUno:hover .fa {
-  opacity: 1;
-}
-
-// CARD DOS==============================================================
-
+.card,
+.cardCero,
+.cardUno,
 .cardDos {
   height: 379px;
   width: 300px;
@@ -165,25 +96,67 @@ body{
   justify-content: center;
   align-items: center;
   position: relative;
-  background: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676421755/Patrick_Stewart_to35ar.jpg");
-  background-position: center center no-repeat;
+}
 
+.cardCero {
+  background: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676417557/AlPacino_tdht8k.jpg");
+  background-position: center center no-repeat;
   background-size: 300px;
   margin: 30px;
+
+  &:hover {
+    background: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676417557/AlPacino_tdht8k.jpg") left center no-repeat;
+    background-size: 600px;
+
+    & h2 {
+      opacity: 1;
+    }
+
+    & .fa {
+      opacity: 1;
+    }
+
+  }
 }
 
-.cardDos:hover {
-  background: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676421755/Patrick_Stewart_to35ar.jpg") left center no-repeat;
-  // background-position: center no-repeat;
-  background-size: 600px;
+.cardUno {
+  background: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676420867/BenStiller_s9yo6e.jpg");
+  background-position: center center no-repeat;
+  background-size: 300px;
+  margin: 30px;
+
+  &:hover {
+    background: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676420867/BenStiller_s9yo6e.jpg") left center no-repeat;
+    background-size: 600px;
+
+    & h2 {
+      opacity: 1;
+    }
+
+    & .fa {
+      opacity: 1;
+    }
+  }
 }
 
-.cardDos:hover h2 {
-  opacity: 1;
-}
+.cardDos {
+  background: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676421755/Patrick_Stewart_to35ar.jpg");
+  background-position: center center no-repeat;
+  background-size: 300px;
+  margin: 30px;
 
-.cardDos:hover .fa {
-  opacity: 1;
+  &:hover {
+    background: url("https://res.cloudinary.com/carina-bosio/image/upload/v1676421755/Patrick_Stewart_to35ar.jpg") left center no-repeat;
+    background-size: 600px;
+
+    & h2 {
+      opacity: 1;
+    }
+
+    & .fa {
+      opacity: 1;
+    }
+  }
 }
 
 .border {
@@ -193,10 +166,10 @@ body{
   border-radius: 10px;
   transition: border 1s;
   position: relative;
-}
 
-.border:hover {
-  border: 1px solid #fff;
+  &:hover {
+    border: 1px solid #fff;
+  }
 }
 
 h2 {
@@ -223,14 +196,16 @@ h2 {
 .fa {
   opacity: 0;
   transition: opacity 1s;
+
+  &:focus {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    margin: 0;
+  }
 }
 
-.fa:focus {
-  background-color: transparent;
-  outline: 0;
-  border: 0;
-  margin: 0;
-}
+// ------FOOTER------
 
 .footer_copyright {
   width: 100vw;
@@ -238,6 +213,5 @@ h2 {
   justify-content: center;
   text-align: center;
   margin-bottom: 0;
-  padding:10px; 
-  // position: fixed;
+  padding: 10px;
 }

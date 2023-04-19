@@ -35,7 +35,7 @@ const Dashboard: FunctionComponent = (props: any) => {
           </div>
 
           <div title="Cards" className={theme.cards}>
-            <div title="CardCero" className={theme.cardCero}>
+            <div title="CardCero" className={(theme.card, theme.cardCero)}>
               <div title="Border" className={theme.border}>
                 <Typography variant="h2">Al Pacino</Typography>
 
@@ -73,7 +73,7 @@ const Dashboard: FunctionComponent = (props: any) => {
               </div>
             </div>
 
-            <div title="Carduno" className={theme.cardUno}>
+            <div title="Carduno" className={(theme.card, theme.cardUno)}>
               <div title="Border" className={theme.border}>
                 <Typography variant="h2">Ben Stiller</Typography>
 
@@ -111,7 +111,7 @@ const Dashboard: FunctionComponent = (props: any) => {
               </div>
             </div>
 
-            <div title="CardDos" className={theme.cardDos}>
+            <div title="CardDos" className={(theme.card, theme.cardDos)}>
               <div title="Border" className={theme.border}>
                 <Typography variant="h2">Patrick Stewart</Typography>
 
